@@ -18,8 +18,10 @@ export class NewAccountComponent {
       status: accountStatus
     });
 
+    this.loggingService.logStatusChange(accountStatus);
     // const service = new LoggingService();
     // service.logStatusChange(accountStatus);
-    // console.log('A server status changed, new status: ' + accountStatus);
+
+    //// console.log('A server status changed, new status: ' + accountStatus);
   }
 }
